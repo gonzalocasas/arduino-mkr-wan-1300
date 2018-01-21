@@ -31,6 +31,8 @@ _You could run these examples on the Arduino Web Editor also, but the screenshot
 
 In order to connect, you will need to be in range of a gateway of [The Things Network](https://www.thethingsnetwork.org/). Check the [world map](https://www.thethingsnetwork.org/map) to see if your local community already has gateways, and if not, consider installing one!
 
+While you're there, also make sure you [have an account on The Things Network](https://account.thethingsnetwork.org/register).
+
 ### Plug the antenna
 
 Always make sure you have the antenna plugged to your Arduino before powering it up.
@@ -39,10 +41,17 @@ Always make sure you have the antenna plugged to your Arduino before powering it
 
 In order to send messages to the network, you need to register it on The Things Network, but before we do that, we need to find out its `Device EUI` (identifier):
 
-  * Plug your Arduino to your computer
-  * Select the correct `Board` and `Port` on the Arduino IDE menu
-  * Open the first sketch of this repository: [`01_get_deveui`](/01_get_deveui/)
-  * Open the [**serial monitor**](https://www.arduino.cc/en/Guide/Environment#toc12) and upload the sketch to your Arduino
-  * The serial monitor will print the `Device EUI`
+  1. Plug your Arduino to your computer
+  2. Select the correct `Board` and `Port` on the Arduino IDE menu
+  3. Open the first sketch of this repository: [`01_get_deveui`](/01_get_deveui/)
+  4. Open the [**serial monitor**](https://www.arduino.cc/en/Guide/Environment#toc12) and upload the sketch to your Arduino
+  5. The serial monitor will print the `Device EUI`, **keep this at hand**.
 
   <img alt="Device EUI" src="/images/01_get_deveui.jpg" width="500">
+
+  6. Now, go to [The Things Network Console](https://console.thethingsnetwork.org/applications)
+  7. Add a new `Application`
+  8. Register a new `Device` giving it a ID of your liking and paste the `Device EUI` that we got on Step 5.
+
+  <img alt="Register new device" src="/images/register-device.jpg" width="500">
+

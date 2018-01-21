@@ -26,6 +26,7 @@ _You could run these examples on the Arduino Web Editor also, but the screenshot
 1. [Check coverage](#check-coverage)
 2. [Plug the antenna](#plug-the-antenna)
 3. [Provision the device](#provision-the-device)
+4. [Sending our first message](#sending-our-first-message)
 
 ### Check coverage
 
@@ -44,14 +45,31 @@ In order to send messages to the network, you need to register it on The Things 
   1. Plug your Arduino to your computer
   2. Select the correct `Board` and `Port` on the Arduino IDE menu
   3. Open the first sketch of this repository: [`01_get_deveui`](/01_get_deveui/)
-  4. Open the [**serial monitor**](https://www.arduino.cc/en/Guide/Environment#toc12) and upload the sketch to your Arduino
-  5. The serial monitor will print the `Device EUI`, **keep this at hand**.
+  4. Update (if needed) the `lora_band region` variable according to your region.
+  5. Open the [**serial monitor**](https://www.arduino.cc/en/Guide/Environment#toc12) and upload the sketch to your Arduino.
+  6. The serial monitor will print the `Device EUI`, **keep this at hand**.
 
   <img alt="Device EUI" src="/images/01_get_deveui.jpg" width="500">
 
-  6. Now, go to [The Things Network Console](https://console.thethingsnetwork.org/applications)
-  7. Add a new `Application`
-  8. Register a new `Device` giving it a ID of your liking and paste the `Device EUI` that we got on Step 5.
+  7. Now, go to [The Things Network Console](https://console.thethingsnetwork.org/applications)
+  8. Add a new `Application`
+  9. Register a new `Device` giving it a ID of your liking and paste the `Device EUI` that we got on Step 5.
 
   <img alt="Register new device" src="/images/register-device.jpg" width="500">
 
+### Sending our first message
+
+Once the device is registered on the network, we can start sending data:
+
+  1. Open the second sketch of this repository: [`02_hello_world`](/02_hello_world/)
+  2. Update (if needed) the `lora_band region` variable according to your region.
+  3. On the second tab (`arduino_secrets.h`), paste the `appEui` and `appKey` values for your device. You can copy & paste it verbatim from the bottom of the device page on The Things Network Console (section `EXAMPLE CODE`).
+
+  <img alt="Device keys" src="/images/paste-keys.jpg" width="500">
+
+  4. Upload the sketch to your Arduino.
+  5. If everything is in order, you will see messages coming through in the `Traffic` tab of The Things Network Console.
+
+> Q: Wait! Why do I see payload = `68 69` instead of `hi`?
+> A: That's HEX for `hi`. That's because you should not be sending strings over LoRaWAN, you have to optimize the air time usage sending as much a compact payload as possible.
+> 

@@ -71,5 +71,6 @@ Once the device is registered on the network, we can start sending data:
   5. If everything is in order, you will see messages coming through in the `Traffic` tab of The Things Network Console.
 
 > Q: Wait! Why do I see payload = `68 69` instead of `hi`?
-> A: That's HEX for `hi`. That's because you should not be sending strings over LoRaWAN, you have to optimize the air time usage sending as much a compact payload as possible.
 > 
+> A: That's HEX for `hi`. That's because you should not be sending strings over LoRaWAN, you have to optimize the air time usage sending as much a compact payload as possible.
+

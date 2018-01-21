@@ -2,6 +2,8 @@
 
 > Minimal getting started examples to connect the Arduino MKR WAN 1300 to [The Things Network](https://thethingsnetwork.org)
 
+  <img alt="Arduino MKR WAN 1300" src="/images/arduino-mkr-wan-1300.jpg" width="500">
+
 ## Setup your environment
 
 Make sure you have an updated version of [Arduino IDE](https://www.arduino.cc/en/Main/Software) installed.  

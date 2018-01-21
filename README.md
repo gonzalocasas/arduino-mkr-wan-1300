@@ -41,7 +41,7 @@ In order to send messages to the network, you need to register it on The Things 
 
   * Plug your Arduino to your computer
   * Select the correct `Board` and `Port` on the Arduino IDE menu
-  * Open the first sketch of this repository: `01_get_deveui`
+  * Open the first sketch of this repository: [`01_get_deveui`](/01_get_deveui/)
   * Open the [**serial monitor**](https://www.arduino.cc/en/Guide/Environment#toc12) and upload the sketch to your Arduino
   * The serial monitor will print the `Device EUI`
 

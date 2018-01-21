@@ -37,12 +37,12 @@ Always make sure you have the antenna plugged to your Arduino before powering it
 
 ### Provision the device
 
-In order to send messages to the network, you need to register your device on The Things Network, but before we do that, we need to find out the `Device EUI` (identifier) assigned to your device:
+In order to send messages to the network, you need to register it on The Things Network, but before we do that, we need to find out its `Device EUI` (identifier):
 
-* Plug your Arduino to your computer
-* Select the correct `Board` and `Port` on the Arduino IDE menu
-* Open the first sketch of this repository: `01_get_deveui`
-* Open the [**serial monitor**](https://www.arduino.cc/en/Guide/Environment#toc12) and upload the sketch to your Arduino
-* The serial monitor will print the `Device EUI`
+  * Plug your Arduino to your computer
+  * Select the correct `Board` and `Port` on the Arduino IDE menu
+  * Open the first sketch of this repository: `01_get_deveui`
+  * Open the [**serial monitor**](https://www.arduino.cc/en/Guide/Environment#toc12) and upload the sketch to your Arduino
+  * The serial monitor will print the `Device EUI`
 
   <img alt="Device EUI" src="/images/01_get_deveui.jpg" width="500">

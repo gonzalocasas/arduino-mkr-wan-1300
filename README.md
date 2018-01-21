@@ -11,10 +11,10 @@ _You could run these examples on the Arduino Web Editor also, but the screenshot
 
   Go to `Tools` -> `Boards` -> `Board manager`, search for `MKR`, and install the `Arduino SAMD Boards` package.
   
-  ![Boards manager](/images/board-manager.jpg)
+  <img alt="Boards manager" src="/images/board-manager.jpg" width="500">
 
 * Install LoRaWAN library:
 
   Go to `Sketch` -> `Include Library` -> `Manage Libraries..`, search for `MKRWAN`, and install it.
 
-  ![Library manager](/images/library-manager.jpg)
+  <img alt="Library manager" src="/images/library-manager.jpg" width="500">

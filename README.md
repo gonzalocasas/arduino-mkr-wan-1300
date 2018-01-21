@@ -68,9 +68,33 @@ Once the device is registered on the network, we can start sending data:
   <img alt="Device keys" src="/images/paste-keys.jpg" width="500">
 
   4. Upload the sketch to your Arduino.
-  5. If everything is in order, you will see messages coming through in the `Traffic` tab of The Things Network Console.
+  5. If everything is in order, you will see messages coming through in the `Data` tab of The Things Network Console.
+
+  <img alt="Data tab" src="/images/data-tab.jpg" width="500">
+
 
 > Q: Wait! Why do I see payload = `68 69` instead of `hi`?
 > 
 > A: That's HEX for `hi`. That's because you should not be sending strings over LoRaWAN, you have to optimize the air time usage sending as much a compact payload as possible.
 
+Check [Working with Bytes](https://www.thethingsnetwork.org/docs/devices/bytes.html) for more details about optimizing your payload.
+
+---
+
+## License
+
+This content is licensed under the MIT License, see the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+1. Fork it (<https://github.com/gonzalocasas/arduino-mkr-wan-1300>)
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request :D
+
+## Credits
+
+Examples loosly based on the ones from [Arduino MKRWAN library](https://www.arduino.cc/en/Tutorial/MKRWANLoraSendAndReceive).
+
+Check the [reference documentation](https://www.arduino.cc/en/Reference/MKRWAN) of the library for additional options.

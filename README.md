@@ -95,6 +95,6 @@ This content is licensed under the MIT License, see the [LICENSE](LICENSE) file 
 
 ## Credits
 
-Examples loosly based on the ones from [Arduino MKRWAN library](https://www.arduino.cc/en/Tutorial/MKRWANLoraSendAndReceive).
+Examples loosely based on [Arduino MKRWAN library](https://www.arduino.cc/en/Tutorial/MKRWANLoraSendAndReceive).
 
 Check the [reference documentation](https://www.arduino.cc/en/Reference/MKRWAN) of the library for additional options.

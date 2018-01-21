@@ -1,6 +1,6 @@
-# Getting Started with the Arduino MKR WAN 1300
+# Getting Started with Arduino MKR WAN 1300
 
-> Minimal getting started code to connect the Arduino MKR WAN 1300 to [The Things Network](https://thethingsnetwork.org)
+> Minimal getting started examples to connect the Arduino MKR WAN 1300 to [The Things Network](https://thethingsnetwork.org)
 
 ## Setup your environment
 

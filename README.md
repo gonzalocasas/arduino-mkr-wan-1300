@@ -46,7 +46,7 @@ In order to send messages to the network, you need to register it on The Things 
 
   1. Plug your Arduino to your computer
   2. Select the correct `Board` and `Port` on the Arduino IDE menu
-  3. Open the first sketch of this repository: [`01_get_deveui`](/01_get_deveui/)
+  3. Open the first sketch of this repository: [`mkrwan_01_get_deveui`](/mkrwan_01_get_deveui/)
   4. Update (if needed) the `lora_band region` variable according to your region.
   5. Open the [**serial monitor**](https://www.arduino.cc/en/Guide/Environment#toc12) and upload the sketch to your Arduino.
   6. The serial monitor will print the `Device EUI`, **keep this at hand**.
@@ -63,7 +63,7 @@ In order to send messages to the network, you need to register it on The Things 
 
 Once the device is registered on the network, we can start sending data:
 
-  1. Open the second sketch of this repository: [`02_hello_world`](/02_hello_world/)
+  1. Open the second sketch of this repository: [`mkrwan_02_hello_world`](/mkrwan_02_hello_world/)
   2. Update (if needed) the `lora_band region` variable according to your region.
   3. On the second tab (`arduino_secrets.h`), paste the `appEui` and `appKey` values for your device. You can copy & paste it verbatim from the bottom of the device page on The Things Network Console (section `EXAMPLE CODE`).
 

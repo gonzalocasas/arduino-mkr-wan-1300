@@ -22,11 +22,16 @@ void setup() {
     while (1) {}
   }
   Serial.println("Successfully joined the network!");
+
+  Serial.println("Enabling ADR and setting low spreading factor");
+  modem.setADR(true);
+  modem.dataRate(5);
 }
 
 void loop() {
   modem.beginPacket();
   modem.print("hi");
+  
   int err = modem.endPacket(false);
 
   if (err > 0) {

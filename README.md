@@ -1,7 +1,5 @@
 # Getting Started with Arduino MKR WAN 1300
 
-[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/gonzalocasas)
-
 > Minimal getting started examples to connect the Arduino MKR WAN 1300 to [The Things Network](https://thethingsnetwork.org)
 
   <img alt="Arduino MKR WAN 1300" src="images/arduino-mkr-wan-1300.jpg" width="500">
